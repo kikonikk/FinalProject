@@ -1,93 +1,167 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SHENA</title>
+        <link rel="shortcut icon" href="./img/e.png">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--NAVIGATION-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+            <div class="container">
+              <img src="./img/logo.jpg" alt="logo1">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i id="bar" class="fas fa-bars"></i></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Shop</a>
+                        <ul>
+                            <li><a href="glasses.html">Glasses</a></li>
+                            <li><a href="lenses.html">Lenses</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="account.html">Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fal fa-search"></i>
+                        <i class="fal fa-shopping-bag"></i>
+                    </li>
+              </div>
+            </div>
+          </nav>
+        
+          <div class="cccontainer">
+            <h1>Connect With Us</h1>
+            <p>opdsfkaodkspoakvp opso kpsokapso kpaosfdk pfodkpaof kapsokpo<br> kpo kaspofkpaodfkpo adkfpokpk pf akpf of</p>
+            <div class="contact-box">
+                <div class="contact-left">
+                    <h3>Sent your request</h3>
+                    <form>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Name</label>
+                                <input type="text" placeholder="John Amendo">
+                            </div>
+                            <div class="input-group">
+                                <label>Phone</label>
+                                <input type="text" placeholder="87714089897">
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Email</label>
+                                <input type="email" placeholder="200103091@stu.sdu.edu.kz">
+                            </div>
+                            <div class="input-group">
+                                <label>Subject</label>
+                                <input type="text" placeholder="Product Demo">
+                            </div>
+                        </div>
+    
+                        <label>Message</label>
+                        <textarea rows="5" placeholder="Your Message"></textarea>
+    
+                        <button type="submit">SEND</button>
+    
+                    </form>
+                </div>
+                <div class="contact-right">
+                    <h3>Reach us</h3>
+                    <table>
+                        <tr>
+                            <td>Email</td>
+                            <td>aoaoa@mail.ru</td>
+                        </tr>
+                        <tr>
+                            <td>Phone</td>
+                            <td>87714089897</td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td>aksay </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
 
-body{
-    background: #b255ff;
-    font-size: 14px;
-}
-
-.container{
-    width: 80%;
-    margin: 50px auto;
-}
-
-.contact-box{
-    background: #fff;
-    display: flex;
-}
-.contact-left{
-    flex-basis: 60%;
-    padding: 40px 60px;
-}
-.contact-right{
-    flex-basis: 40%;
-    padding: 40px;
-    background: #a01eb9;
-    color: #fff;
-}
-h1{
-    margin-bottom: 10px;
-}
-.container p{
-    margin-bottom: 40px;
-}
-
-.input-row{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.input-row .input-group{
-    flex-basis: 45%;
-}
-input{
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid #ccc;
-    outline: none;
-    padding-bottom: 5px;
-}
-textarea{
-    width: 100%;
-    border: none;
-    outline: none;
-    padding: 10px;
-    box-sizing: border-box;
-}
-label{
-    margin-bottom: 6px;
-    display: block;
-    color: #a01eb9;
-}
-button{
-    background: #a01eb9;
-    width: 100px;
-    border:none;
-    outline: none;
-    color:#fff;
-    height: 35px;
-    border-radius: 30px;
-    margin-top: 20px;
-    box-shadow:0px 5px 15px 0px rgba(28,0,181,0.3);
-}
-
-.contact-left h3{
-    color: #a01eb9;
-    font-weight: 600;
-    margin-bottom: 30px;
-}
-
-.contact-right h3{
-    font-weight: 600;
-    margin-bottom: 30px;
-}
-
-tr td:first-child{
-    padding-right: 20px;
-}
-tr td{
-    padding-top: 20px;
-}
+    <footer class="mt-5 py-5">
+        <div class="row container mx-auto pt-5">
+            <div class="footer-one col-lg-3 col-md-8 col-15 mb-3">
+                <img src="./img/logo.PNG" alt="logo2">
+                <p class="pt-3">Fringilla urna porttitor rhoncus dolor purus luctus venenatis lectus magna fringilla diam maecenas ultricies mi eget maurus.</p>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                <h5 class="pb-2">Featured</h5>
+                <ul class="text-uppercase list-unstyled">
+                    <li><a href="#">men</a></li>
+                    <li><a href="#">women</a></li>
+                    <li><a href="#">kids</a></li>
+                    <li><a href="#">new arrivals</a></li>
+                    <li><a href="#">sunglasses</a></li>
+                </ul>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                 <h5 class="pb-2">Contact Us</h5>
+                 <div>
+                    <h6 class="text-uppercase">Address</h6>
+                    <p>Kaskelen, Abylai khana 1/1, KZ</p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Phone</h6>
+                    <p>+7 747 747 47 47</p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Email</h6>
+                    <p>shena@stu.sdu.edu.kz</p>
+                </div>
+            </div>    
+            <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                <h5 class="pb-2">Instagram</h5>
+                <div class="row">
+                    <img class="img-fluid w-25 h-100 m-2" src="./img/insta/1.jpg" alt="insta1">
+                    <img class="img-fluid w-25 h-100 m-2" src="./img/insta/2.jpg" alt="insta2">
+                    <img class="img-fluid w-25 h-100 m-2" src="./img/insta/3.jpg" alt="insta3">
+                    <img class="img-fluid w-25 h-100 m-2" src="./img/insta/4.jpg" alt="insta4">
+                    <img class="img-fluid w-25 h-100 m-2" src="./img/insta/5.jpg" alt="insta5">
+                </div>
+            </div>
+        </div>
+        <div class="copyright mt-5">
+            <div class="row container mx-auto">
+                <div class="col-lg-3 col-md-6 col-12 mb-3">
+                    <img src="./img/payment.png" alt="p">
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 text-nowrap mb-2 ">
+                    <p>SHENA ⓒ 2021.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    </body>
+</html>
